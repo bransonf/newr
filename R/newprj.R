@@ -66,7 +66,4 @@ close(fileConn)
 
 rm(fileConn, user, projName)
 
-### Open the file if PBS modeling is installed
-if(requireNamespace("PBSmodelling", quietly = TRUE)){PBSmodelling::openFile(paste0("docs/", projName,".Rmd"))}
-
 }
