@@ -2,6 +2,7 @@
 
 To install this package:
 ```r
+install.packages("devtools")
 devtools::install_github("bransonf/newr")
 ```
 
