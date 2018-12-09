@@ -1,7 +1,7 @@
 ## This package is used for consistent creation of project directories.
 
 To install this package:
-```{r}
+```r
 devtools::install_github("bransonf/newr")
 ```
 
@@ -10,7 +10,7 @@ And once it is installed, here is how you use this utility:
 1. First you create a R project in RStudio, creating or selecting an exisiting folder.
 2. Run this code:
 
-```{r}
+```r
 newr::newprj()
 ```
 
