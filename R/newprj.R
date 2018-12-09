@@ -1,3 +1,8 @@
+#' A Function for creating directories in a consistent manner
+#' @export
+newprj <- function(){
+
+
 ### Define some naming variables
 
 user <- Sys.getenv("LOGNAME")
@@ -60,3 +65,5 @@ close(fileConn)
 ### and to clear environment
 
 rm(fileConn, user, projName)
+
+}
