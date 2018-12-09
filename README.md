@@ -1,6 +1,17 @@
-This folder contains the following directories for `newr`
+## This package is used for consistent creation of project directories.
 
-* `data/` contains the data used in this project.
-* `docs/` contains the Rnotebook used for this project.
-* `results/` contains the output results of this project.
-* `source/` contains the script source code for this project.
+To install this package:
+```{r}
+devtools::install_github("bransonf/newr")
+```
+
+And once it is installed, here is how you use this utility:
+
+1. First you create a R project in RStudio, creating or selecting an exisiting folder.
+2. Run this code:
+
+```{r}
+newr::newprj()
+```
+
+You will notice that this creates 4 folders by default, as well as a default README describing these directories. Additionally, a template notebook can be found in the `docs/` folder.
