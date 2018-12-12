@@ -8,7 +8,7 @@ devtools::install_github("bransonf/newr")
 
 And once it is installed, here is how you use this utility:
 
-1. First you create a R project in RStudio, creating or selecting an exisiting folder.
+1. First you create a R project in RStudio, creating or selecting an existing folder.
 2. Run this code:
 
 ```r
