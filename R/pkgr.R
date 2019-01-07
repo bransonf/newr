@@ -1,7 +1,7 @@
 #' Install Packages on a new workstation
 #' @description Spatial offers packages for working with spatial data     Visual offers packages for visualizing data, including ggplot and supporting libraries
 #' @export
-pkgr <- function(category = c("tidyverse","spatial", "visual", "system", "development", "statistics", "data", "other"), dependencies = TRUE)
+pkgr <- function(category = c("tidyverse","spatial", "visual", "system", "development", "statistics", "data", "other"), dependencies = TRUE){
 ## This additional function to Newr will automatically install a wide variety of popular pacakges for a combination of things in R
 ## It's primary use is to quickly setup a new computer to accomodate use
 ## Eventually, packages will be organized and selectable by categorization
@@ -9,7 +9,7 @@ pkgr <- function(category = c("tidyverse","spatial", "visual", "system", "develo
 
 packages <- c()
 
-if(category = c("tidyverse","spatial", "visual", "system", "development", "statistics", "data", "other")){
+if(category == c("tidyverse","spatial", "visual", "system", "development", "statistics", "data", "other")){
   ans <- readline("You are about to install all of the packages provided by this function. Proceed? Y/N")
   if(ans == "N"){stop()}
   else(NULL)
@@ -57,3 +57,5 @@ if("other" %in% category){
 
 ### INSTALLATION
 install.packages(pkgs = packages, dependencies = dependencies)
+
+}
