@@ -20,8 +20,8 @@ if(all(c("tidyverse","spatial", "visual", "system", "development", "statistics",
 if("tidyverse" %in% category){packages <- append(packages, "tidyverse")}
 ## spatial
 if("spatial" %in% category){
-    if(requireNamespace("devtools", quietly = TRUE)){devtools::install_github("dkahle/ggmap")}
-    else if(requireNamespace("remotes", quietly = TRUE)){remotes::install_github("dkahle/ggmap")}
+    #if(requireNamespace("devtools", quietly = TRUE)){devtools::install_github("dkahle/ggmap")}
+    #else if(requireNamespace("remotes", quietly = TRUE)){remotes::install_github("dkahle/ggmap")}
   packages <- append(packages, c("spatstat","spatial","sp","sf","shp2graph","rgl","rgeos","rgdal","RgoogleMaps","raster","prettymapr","leaflet","geosphere", "cartography","lwgeom","mapproj","maps","maptools","mapview","tigris","tmap","spdep","quickmapr","gstat","stplanr","ipfp","mipfp"))
 }
 ## data manipulation (tidyverse)
@@ -44,10 +44,10 @@ if("statistics" %in% category){
 }
 ## data packages
 if("data" %in% category){
-  if(requireNamespace("devtools", quietly = TRUE)){devtools::install_github("slu-openGIS/gateway")
-  devtools::install_github("slu-openGIS/stlcsb")}
-  else if(requireNamespace("remotes", quietly = TRUE)){remotes::install_github("slu-openGIS/gateway")
-  remotes::install_github("slu-openGIS/stlcsb")}
+  #if(requireNamespace("devtools", quietly = TRUE)){devtools::install_github("slu-openGIS/gateway")
+  #devtools::install_github("slu-openGIS/stlcsb")}
+  #else if(requireNamespace("remotes", quietly = TRUE)){remotes::install_github("slu-openGIS/gateway")
+  #remotes::install_github("slu-openGIS/stlcsb")}
   packages <- append(packages, c("testDriveR","tidycensus","spData","gapminder","engsoccerdata"))
 }
 ## other packages
