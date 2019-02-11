@@ -1,10 +1,10 @@
 Package: newr
 Type: Package
-Title: Creates folders, README and Rnotebook
-Version: 1.1.0
+Title: newr: Package for quick R project setup
+Version: 0.1.0
 Author: Branson Fox
 Maintainer: Branson Fox <branson.fox@slu.edu>
-Description: Creates several folders, and a default readme and notebook.
+Description: Functions to automate the R project workflow.
 License: CC0
 Encoding: UTF-8
 LazyData: true
